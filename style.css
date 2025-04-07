@@ -81,8 +81,7 @@ nav{
 }
 
 .topline:hover .dropdown-menu{
-    display: block;
-    
+    display: block;  
 }
 
 .dropdown-menu li{
@@ -164,7 +163,7 @@ main{
 .sub-reviews a img{
     height: 460px;
     width: 100%;
-    max-width: 100%;
+    /* max-width: 100%; */
     object-fit: contain;
 }
 
@@ -205,8 +204,6 @@ main{
     font-weight: 700;
     cursor: grab;
 }
-
-/* @media  */
 
 
 /* Footer */
