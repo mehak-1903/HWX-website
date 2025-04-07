@@ -128,3 +128,56 @@ main{
     height: 300px;
     width: 100%; */
 }
+
+/* Reviews Section */
+.reviews{
+    height: 721px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid brown;
+}
+
+.reviews-container{
+    max-width: 79%;
+    height: 78%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+/* Footer */
+footer{
+    background-color: #000;
+    height: 44px;
+    box-sizing: border-box;
+}
+
+.footer-container{
+    height: 100%;
+    width: 79%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container h4{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.1em;
+    font-weight: 600;
+}
+
+.footer-container ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-container li a{
+    color: #fff;
+    text-transform: none;
+    text-decoration: none;
+
+}
