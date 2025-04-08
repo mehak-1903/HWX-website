@@ -49,12 +49,7 @@ nav{
     list-style: none;
 }
 
-.topline:hover > a{
-    border-bottom: 2px solid #13aff0;
-    padding-bottom: 5px;
-}
-
-.topline a{
+.nav-item a{
     text-decoration: none;
     color: #ededed;
     font-size: 14px;
@@ -63,15 +58,22 @@ nav{
     letter-spacing: 1;
 }
 
-/* Dropdown */
+/* Topline */
 
-.topline{
-    position: relative;
-    border-bottom: 1px solid transparent;
-    /* padding-bottom: 70px; */
+.topline:hover > a{
+    border-bottom: 2px solid #13aff0;
+    padding-bottom: 5px;
 }
 
-.topline .dropdown-menu{
+/* Dropdown */
+
+.nav-item li{
+    position: relative;
+    padding-bottom: 40px; 
+    padding-top: 40px;
+}
+
+.nav-item .dropdown-menu{
     display: none;
     position: absolute;
     background-color: #fff;
@@ -81,7 +83,7 @@ nav{
     z-index: 1000;
 }
 
-.topline:hover .dropdown-menu{
+.nav-item li:hover .dropdown-menu{
     display: block;  
 }
 
@@ -601,3 +603,4 @@ footer{
     text-transform: none;
     text-decoration: none;
 }
+
