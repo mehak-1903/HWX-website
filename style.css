@@ -33,6 +33,11 @@
         padding-top: 4px;
     }
 
+    .logo:hover{
+        opacity: 0.3;
+        transition: all .3s ease;
+    }
+
     .navbar{
         height: auto;
         width: 100%;
@@ -42,7 +47,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        gap: 37px;
+        gap: 30px;
     }
 
     .navbar ul li{
@@ -52,10 +57,15 @@
     .nav-item a{
         text-decoration: none;
         color: #ededed;
-        font-size: 12.5px;
+        font-size: 13px;
         font-weight: 600;
         font-family: 'Varela Round', sans-serif;
-        letter-spacing: 1;
+        letter-spacing: .6px;
+        transition: all .3s ease;
+    }
+
+    .nav-item a i{
+        font-size: 9.5px;
     }
 
     /* Topline */
@@ -130,13 +140,13 @@
     main{
         height: 587px;
         width: 100%;
-        padding: 100px 0;
+        padding: 80px 0;
     }
 
 
     .about-designing{
         height: 100%;
-        max-width: 79.1%;
+        max-width: 75.8%;
         margin: auto;
         display: flex;
         justify-content: space-between;
@@ -150,21 +160,29 @@
     .design-container h3{
         box-sizing: border-box;
         font-size: 25px;
-        font-weight: 700;
+        font-weight: 600;
+        font-family: 'Varela Round', sans-serif;
         text-transform: uppercase;
         margin-left: 30px;
         margin-top: 70px;
         margin-bottom: 40px;
-        font-family: 'Roboto';
     }
 
     .design-container ul{
         margin-left: 50px;
-        font-family: 'Roboto';
-        font-weight: 400;
+        font-family: 'Varela Round', sans-serif;
+        font-weight: 500;
         font-size: 15px;
         line-height: 2;
         color: #55504a;
+    }
+
+    .design-container img{
+        /* height: 100%;
+        width: 100%; */
+        object-fit: cover;
+        border: 1px solid black;
+        /* box-sizing: border-box; */
     }
 
     .box2{
@@ -213,7 +231,7 @@
         background-size: cover;
         object-fit: cover;
         backface-visibility: hidden;
-        transition: .5s ease;
+        transition: all .5s ease;
         position: relative;
     }
 
@@ -266,8 +284,9 @@
 
     .text:hover{
         opacity: 1;
-        transition: 0.5s ease;
+        transition: all 0.5s ease;
     }
+
 
     .text h3{
         font-size: 18px;
@@ -282,6 +301,7 @@
     .view-more-btn{
         text-align: center;
         margin-top: 60px;
+        transition: all 0.3s ease;
     }
 
     .view-more-btn a{
@@ -293,14 +313,17 @@
         font-size: 14px;
         font-family: 'Varela Round', sans-serif;
         font-weight: 500;
+        transition: all 0.3s ease;  
     }
 
     .view-more-btn a i{
         font-size: 13px;
-        font-weight: bolder;
         margin-left: 3px;
     }
 
+    .view-more-btn:hover{
+        transform: scale(1.1);
+    }
 
     /* Reviews Section */
     .reviews{
@@ -399,7 +422,7 @@
     }
 
     .business-help-container{
-        width: 76%;
+        width: 75.8%;
         height: 90%;
         margin: auto;   
         box-sizing: border-box;
@@ -409,6 +432,7 @@
     .business-help-container h4{
         font-size: 40px;
         font-weight: 900;
+        font-family: 'Varela Round', sans-serif;
         line-height: 1.2em;
         color: #e55725;
         padding: 50px;
@@ -433,6 +457,10 @@
         box-sizing: border-box;
     }
 
+    .inside-subboxes:hover{
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
+    }
+    
     .inside-subboxes{
         height: 57%;
         width: 100%;
@@ -454,7 +482,7 @@
         margin: 10px 0;
         font-size: 13px;
         line-height: 1.4;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Varela Round', sans-serif;
     }
 
     .inside-subboxes h3 a{
@@ -463,12 +491,12 @@
     }
 
     .inside-subboxes p{
-        font-size: 15px;
+        font-size: 16px;
         text-align: center;
         margin: 10px 30px;
         font-weight: 400;
         line-height: 1.8;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Varela Round', sans-serif;
     }
 
     .lrn-mre{
@@ -476,8 +504,8 @@
         padding: 20px;
         font-size: 15px;
         font-weight: 500;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 1.2px;
+        font-family: 'Varela Round', sans-serif;
+        letter-spacing: .9px;
         background-color: #243e94;
         border-radius: 5px;
         line-height: 1px;
@@ -593,21 +621,23 @@
     }
 
     .icon:hover{
-        background-color: #52a7fe;
+        background-color: #1e83ec;
         color: #fff;
+        transition: all .3s ease;
     }
-    .icon:hover > .fa-paint-brush{    
-        color: #fff;
+    .icon:hover i{    
+        color: #fff !important;
     }
 
     .subcont-box h3{
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
-        font-family: 'Roboto', sans-serif;
-        margin: 40px 0 20px 0;
+        font-family: 'Varela Round', sans-serif;
+        margin: 30px 0 20px 0;
         line-height: 1.4;
         text-align: center;
         letter-spacing: 1px;
+        transition: all .3s ease;
     }
 
     .subcont-box h3 a{
@@ -618,9 +648,10 @@
     .subcont-box p{
         font-size: 16px;
         font-weight: 500;
+        font-family: 'Varela Round';
         line-height: 1.8;
         text-align: center;
-        margin: 15px;
+        margin: 5px;
         color: #333;
     }
 
@@ -683,9 +714,10 @@
         color: #fff;
         padding: 20px 50px;
         border-radius: 50px;
-        font-size: 16px;
+        font-size: 15px;
         background-color: #69727d;
         margin-left: 43%;
+        font-family: 'Varela Round', sans-serif;
     }
 
     .fa-arrow-right{
@@ -695,7 +727,8 @@
 
     .build-site-container a:hover{
         background-color: #1e83ec;
-        border: none;
+        border: 2px solid #1e83ec;
+        transition: all 0.3s ease-in-out;
     }
 
     /* Sub-footer */
@@ -769,8 +802,16 @@
         object-fit: cover;
         box-sizing: border-box;
         margin-top: 15px;
+        cursor: pointer;
     }
 
+    .footer-content ul li a:hover{
+        color: #13aff0;
+    }
+
+    .footer-content ul li a:hover i{
+        color: #fff !important;
+    }
     /* Footer */
     footer{
         background-color: #000;
