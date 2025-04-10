@@ -624,6 +624,7 @@
         background-color: #1e83ec;
         color: #fff;
         transition: all .3s ease;
+        transform: scale(1.1);
     }
     .icon:hover i{    
         color: #fff !important;
@@ -723,6 +724,8 @@
     .fa-arrow-right{
         color: #fff;
         font-weight: 900;
+        font-size: 18px;
+        margin-left: 10px;
     }
 
     .build-site-container a:hover{
@@ -741,7 +744,7 @@
     }
 
     .sub-footer-container{
-        width: 77%;
+        width: 77.7%;
         height: 100%;
         margin: auto;
         display: flex;
