@@ -229,7 +229,7 @@
         width: auto;
         height: auto;
         background-size: cover;
-        object-fit: cover;
+        /* object-fit: contain; */
         backface-visibility: hidden;
         transition: all .5s ease;
         position: relative;
@@ -249,6 +249,7 @@
 
     .image4{
         background-image: url('work-image4.png');
+        background-position: center;
     }
 
     .image5{
