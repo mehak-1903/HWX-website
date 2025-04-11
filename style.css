@@ -19,18 +19,16 @@
     nav{
         height: auto;
         width: 75.8%;
-        /* border: 1px solid blue; */
         margin: auto;
         box-sizing: border-box;
         display: flex;
         align-items: center;
-        justify-content: center;
-        /* background: rgba(0, 0, 0, 0); */
-        
+        justify-content: center;        
     }
 
     .logo{
-        padding-top: 4px;
+        padding-top: 5px;
+        margin-left: 1px;
     }
 
     .logo:hover{
@@ -52,6 +50,7 @@
 
     .navbar ul li{
         list-style: none;
+        margin-bottom: 2px;
     }
 
     .nav-item a{
@@ -145,7 +144,7 @@
 
 
     .about-designing{
-        height: 100%;
+        max-height: 100%;
         max-width: 75%;
         margin: auto;
         display: flex;
@@ -207,6 +206,7 @@
         padding-left: 5px;
         line-height: 1.65;
     }
+        
     /* Recent Work */
     .work{
         width: 100%;
@@ -247,10 +247,10 @@
         width: auto;
         height: auto;
         background-size: cover;
-        /* object-fit: contain; */
         backface-visibility: hidden;
         transition: all .5s ease;
         position: relative;
+        overflow: hidden;
     }
 
     .image1{
@@ -301,7 +301,7 @@
         transform-origin: center;
         opacity: 0;
         transform: scale(50%);
-        transition: opacity 1s ease, transform 0.3s ease;
+        transition: opacity 1.3s ease, transform 0.3s ease;
     }
 
     .text:hover{
@@ -363,8 +363,9 @@
         align-items: center;
         padding: 80px 0;
         box-sizing: border-box;
+        gap: 10px;
     }
-
+    
     .sub-reviews{
         width: 100%;
         height: 100%;
@@ -431,7 +432,7 @@
     .reviews-text p{
         font-family: 'Varela Round', sans-serif;
         color: #000;
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-style: italic;
         line-height: 1.5;
         cursor: grab;
@@ -471,7 +472,7 @@
     }
 
     .business-help-container{
-        width: 74.8%;
+        width: 73.5%;
         height: 92%;
         margin: auto;   
         box-sizing: border-box;
@@ -513,7 +514,7 @@
         height: 55%;
         width: 100%;
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 18px;
         text-align: center;
         position: relative;
         border: 1px solid #000;
@@ -541,7 +542,7 @@
     .inside-subboxes p{
         font-size: 16px;
         text-align: center;
-        margin: 10px 30px;
+        margin: 9px 20px;
         font-weight: 400;
         line-height: 1.8;
         font-family: 'Varela Round', sans-serif;
@@ -549,7 +550,7 @@
 
     .lrn-mre{
         border-color: #243e94;
-        padding: 20px;
+        padding: 20px 19px;
         font-size: 15px;
         font-weight: 500;
         font-family: 'Varela Round', sans-serif;
@@ -563,6 +564,7 @@
         transform: translate(-50%, -80%);
         width: 200px;
     }
+
     /* what we do */
     .services{
         width: 100%;
@@ -687,6 +689,7 @@
         line-height: 1.4;
         text-align: center;
         letter-spacing: 1px;
+        text-transform: uppercase;
         transition: all .3s ease;
     }
 
@@ -725,12 +728,12 @@
     /* Build a website */
 
     .build-website{
-        height: 500px;
+        height: 531px;
         width: 100%;
         box-sizing: border-box;
         background-color: transparent;
         background-image: linear-gradient(90deg, #585b64 0%, #2c2f38 100%);
-        padding: 10% 0;
+        padding: 12% 0;
     }
 
     .build-site-container{
@@ -764,7 +767,7 @@
         border: 2px solid #fff;
         text-decoration: none;
         color: #fff;
-        padding: 19px 50px;
+        padding: 18px 49px;
         border-radius: 50px;
         font-size: 16px;
         background-color: rgb(105, 114, 125);
@@ -813,13 +816,13 @@
     }
 
     .footer-content h2{
-        font-family: 'Varela Round', sans-serif;
         font-size: 18px;
         font-weight: 600;
         color: #fff;
         padding-left: 15px;
         border-left: 4px solid #52a7fe;
-        margin-bottom: 20px;
+        line-height: 1em;
+        margin-bottom: 18px;
         font-family: 'Varela Round', sans-serif;
     }
 
@@ -830,10 +833,10 @@
     .footer-content ul li a{
         text-decoration: none;
         color: #fff; 
-        font-size: 12.5px;
+        font-size: 12px;
         font-weight: 400;
         font-family: 'Varela Round', sans-serif; 
-        line-height: 2.4em;
+        line-height: 2.6em;
     }
 
     .footer-content ul li a i{
@@ -843,14 +846,14 @@
     }
 
     .fa-envelope{
-        width: 2.5em;
-        font-size: 14px;
-        margin-right: 13px;
+        /* width: 2.5em; */
+        font-size: 15px !important;
+        /* margin-right: 13px; */
     }
 
     .fa-phone-alt{
         transform: rotate(105deg);
-        margin-right: 10px;
+        /* margin-right: 10px; */
     }
 
     .footer-content li img{
