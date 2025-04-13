@@ -221,7 +221,7 @@
 }
 
 .business-top svg {
-    min-height: 67px;
+    max-height: 67px;
     fill: rgba(214, 110, 62, 0.99);
     width: 100%;
     box-sizing: border-box;
