@@ -1068,7 +1068,8 @@
    }
 }
 
-.btn a{
-    transition: all 0.3s ease-in-out;
-    /* transform: translateY(-10px); */
+@media screen and (max-width: 588px){
+    .footer-container ul{
+        row-gap: 5px;
+    }
 }
