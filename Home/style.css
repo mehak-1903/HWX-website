@@ -7,7 +7,7 @@
 header {
     min-height: 100vh;
     max-width: 100%;
-    background-image: url('header-image.jpg');
+    background-image: url('././header-image.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -539,57 +539,40 @@ main {
     overflow: hidden;
 }
 
-/* Responsive */
-/* @media(max-width: 768px){
- .work{
-     min-height: 910px;
-     width: 100%;
- }
- .grid-container{
-     min-height: 78%;
-     max-width: 75.8%;
-     grid-template-columns: repeat(1, 1fr);
- }
- .grid-images{
-     height: 350px;
-     width: 100%;
- }
-} */
-
 .image1 {
-    background-image: url('work-image1.png');
+    background-image: url('./work-image1.png');
 }
 
 .image2 {
-    background-image: url('work-image2.png');
+    background-image: url('./work-image2.png');
 }
 
 .image3 {
-    background-image: url('work-image3.png');
+    background-image: url('./work-image3.png');
     width: 99.5%;
 }
 
 .image4 {
-    background-image: url('work-image4.png');
+    background-image: url('./work-image4.png');
     background-position: center;
 }
 
 .image5 {
-    background-image: url('work-image5.png');
+    background-image: url('./work-image5.png');
 }
 
 .image6 {
-    background-image: url('work-image6.png');
+    background-image: url('./work-image6.png');
 }
 
 .image7 {
-    background-image: url('work-image7.png');
+    background-image: url('./work-image7.png');
     background-position: center;
     width: 99.5%;
 }
 
 .image8 {
-    background-image: url('work-image8.jpg');
+    background-image: url('./work-image8.jpg');
 }
 
 .text {
@@ -998,6 +981,9 @@ footer {
         margin: 0px;
     }
 
+    nav{
+        background: #333;   
+    }
 
     .footer-container {
         flex-direction: column-reverse;
@@ -1058,6 +1044,10 @@ footer {
 
     .box1 {
         padding-left: 20px;
+    }
+
+    nav{
+        background: #333;   
     }
 
     .footer-container {
