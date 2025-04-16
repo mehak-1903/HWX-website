@@ -110,7 +110,7 @@ nav {
 
 /* Sub-header */
 .images {
-    height: 200px;
+    min-height: 200px;
     width: 100%;
     box-sizing: border-box;
     background-color: #f0f0f0;
@@ -118,7 +118,7 @@ nav {
 
 .sub-nav-images {
     height: 100%;
-    width: 76%;
+    max-width: 76%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -1080,6 +1080,22 @@ footer {
 /* For Tablet */
 
 @media screen and (max-width: 1023px) {
+    header{
+        min-height: 81vh;
+        width: 100%;
+        background-size: contain;
+    }
+
+    .nav{
+        max-width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 30px;
+        background-color: #333;
+    }
+
     .navbar ul {
         position: fixed;
         top: -200px;
@@ -1123,11 +1139,52 @@ footer {
     #click:checked~.navbar ul {
         top: 80px;
     }
+
+    /* Sub-header */
+    .images {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .sub-nav-images{
+        height: 100%;
+        /* width: 100%; */
+    }
+
+    .sub-nav-images img:first-child{
+        text-align: center;
+        display: block;
+    }
+
+    .sub-nav-images img:nth-child(2){
+        text-align: center;
+        display: block;
+    }
+
+    .sub-nav-images img{
+        display: none;
+    }
 }
 
 /* For mobile */
 
 @media screen and (max-width: 600px) {
+    header{
+        min-height: 81vh;
+        width: 100%;
+        background-size: contain;
+    }
+
+    .nav{
+        max-width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 30px;
+        background-color: #333;
+    }
+    
     .navbar ul {
         position: fixed;
         top: -200px;
@@ -1170,5 +1227,30 @@ footer {
 
     #click:checked ~ .navbar ul {
         top: 80px;
+    }
+
+    /* Sub-header */
+    .images {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .sub-nav-images{
+        height: 100%;
+        /* width: 100%; */
+    }
+
+    .sub-nav-images img:first-child{
+        text-align: center;
+        display: block;
+    }
+
+    
+    .sub-nav-images img:nth-child(2){
+        display: none;
+    }
+
+    .sub-nav-images img{
+        display: none;
     }
 }
