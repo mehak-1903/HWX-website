@@ -158,7 +158,7 @@ header {
 
 .web-format-container{
     max-width: 78.8%;
-    height: 520px;
+    min-height: 520px;
     border: 1px solid green;
     margin: auto;
     padding: 10px;
@@ -177,7 +177,7 @@ header {
 
 .inside-format-container{
     width: 100%;
-    height: 87.5%;
+    min-height: 87.5%;
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -677,5 +677,12 @@ footer {
     .overlay-div{
         min-height: 82vh;
         width: 100%;
+    }
+    .web-format-container{
+        max-width: 100%;
+        
+    }
+    .inside-format-container{
+        flex-direction: column;
     }
 }
