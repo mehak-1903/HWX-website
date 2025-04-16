@@ -203,7 +203,8 @@ nav {
 
 .about-website h2{
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+    margin-left: 30px;
 }
 /* Satisfied Client */
 
