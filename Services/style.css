@@ -25,7 +25,7 @@ header {
 
 /* Navbar */
 
-nav {
+.nav {
     height: auto;
     max-width: 75.8%;
     margin: auto;
@@ -455,12 +455,20 @@ footer {
 /* For Tablet */
 
 @media screen and (max-width: 1023px) {
-    header {
-        height: 100vh;
+    header{
+        min-height: 81vh;
+        width: 100%;
+        background-size: contain;
     }
 
-    nav {
-        background: #333;
+    .nav{
+        max-width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 30px;
+        background-color: #333;
     }
 
     .navbar ul {
@@ -509,6 +517,7 @@ footer {
 
     .sub-footer-container {
         flex-direction: column;
+
     }
 
     footer {
@@ -521,6 +530,7 @@ footer {
 
     .footer-container ul {
         justify-content: center;
+        row-gap: 8px;
     }
 
     .footer-container h4 {
@@ -561,12 +571,20 @@ footer {
 /* For mobile */
 
 @media screen and (max-width: 600px) {
-    header {
-        height: 100vh;
+    header{
+        min-height: 100vh;
+        width: 100%;
+        background-size: contain;
     }
 
-    nav {
-        background: #333;
+    .nav{
+        max-width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0px 30px;
+        background-color: #333;
     }
 
     .navbar ul {
@@ -645,5 +663,19 @@ footer {
 
     .footer-container h4 {
         text-align: center;
+    }
+
+    .logo-images{
+        display: none;
+    }
+
+    .logo-image1{
+        display: block;
+        text-align: center;
+    }
+
+    .overlay-div{
+        min-height: 82vh;
+        width: 100%;
     }
 }
