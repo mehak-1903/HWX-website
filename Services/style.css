@@ -20,7 +20,7 @@ header {
     min-height: 780px;
     width: 100%;
     background-color: rgba(64, 84, 178, 0.8);
-    /* filter: brightness(146%) contrast(171%) saturate(151%) blur(0px) hue-rotate(0deg); */
+    filter: brightness(100%) contrast(150%) saturate(151%) blur(0px) hue-rotate(0deg);
     z-index: 2;
     position: absolute;
     inset: 0;
@@ -161,7 +161,7 @@ header {
 
 .web-format-container {
     max-width: 78.8%;
-    min-height: 520px;
+    height: auto;
     margin: auto;
     padding: 10px;
     box-sizing: border-box;
@@ -180,10 +180,7 @@ header {
 
 .inside-format-container {
     width: 100%;
-    min-height: 87.5%;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    height: 100%;
     box-sizing: border-box;
     margin-top: 30px;
 }
@@ -191,6 +188,10 @@ header {
 .sub-format-container {
     width: 100%;
     height: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
     box-sizing: border-box;
 }
 
@@ -200,7 +201,6 @@ header {
     border: 1px solid #3a3a3a;
     box-sizing: border-box;
     padding: 20px;
-    margin-bottom: 20px;
 }
 
 .about-website i {
@@ -681,7 +681,8 @@ footer {
         width: 100%;
     }
 
-    .services-container {
+    .services-container, 
+    .web-format-container {
         max-width: 100%;
     }
 
@@ -692,6 +693,17 @@ footer {
 
     .services-container h2 {
         font-size: 30px;
+    }
+
+    .web-format-container h2{
+        font-size: 32px;
+    }
+
+    .about-website{
+        padding: 15px;
+    }
+    .about-website h2{
+        font-size: 22px;
     }
 }
 
@@ -828,7 +840,8 @@ footer {
     }
 
     .sub-container,
-    .outside-images-container {
+    .outside-images-container ,
+    .sub-format-container{
         flex-direction: column;
     }
 
@@ -838,22 +851,17 @@ footer {
         letter-spacing: -0.4px;
     }
 
-}
+    /* Website Format */
 
+    .web-format-container h2{
+        font-size: 22px;
+        line-height: 1.5em;
+        letter-spacing: -0.2px;
+    }
 
-/* 
-@media(max-width: 600px){
-    .inside-format-container{
-        flex-direction: column;
-    }
-    .about-website{
-        margin-left: 0px;
-        width: 100%;
-    }
     .about-website i{
-        text-align: center;
         display: block;
-        margin-left: 220px;
+        margin-left: 200px;
         margin-bottom: 20px;
     }
     .about-website h2{
@@ -861,7 +869,115 @@ footer {
     }
     .about-website p{
         text-align: center;
-        width: 100%;
         margin: 10px;
     }
-} */
+    .website-format{
+        padding: 0px;
+    }
+}
+
+
+
+
+
+
+
+/* Web Design Project */
+.web-projects{
+    min-height: 740px;
+    width: 100%;
+}
+
+.svg-top{
+    height: auto;
+    width: 100%;
+}
+
+.svg-top svg{
+    transform: rotate(180deg);
+    direction: ltr;
+}
+
+.elementor-shape-fill{
+    fill: #fa4a7e;
+}
+
+.svg-bottom{
+    height: auto;
+    width: 100%;
+}
+
+.svg-bottom svg{
+    direction: rtl;
+}
+
+.web-projects-container{
+    height: 100%;
+    max-width: 79%;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+
+.project-container{
+    width: 100%;
+    height: 100%;
+}
+
+.image-cont{
+    width: 70%;
+}
+
+.inside-image-container{
+    width: 100%;
+    height: 235px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.images{
+    height: 100%;
+    width: 100%;
+}
+
+.images img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(2, 2, 2, 0.50) !important; 
+}
+
+.project-container h2{
+    font-size: 2em;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin: 30px 10px;
+    line-height: 1;
+}
+
+.project-container p{
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+.btn{
+    margin: 60px 0 0 10px;
+}
+
+.btn a{
+    color: #fff;
+    background-color: #fa4a7e;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 15px 30px;
+    text-align: center;
+    line-height: 1;
+}
