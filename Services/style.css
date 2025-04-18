@@ -940,6 +940,8 @@ footer {
 .images{
     height: 100%;
     width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .images img{
@@ -982,7 +984,52 @@ footer {
     line-height: 1;
 }
 
+.images-overlay{
+    position: absolute;
+    top: 70%;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    z-index: 2;
+    background-color: #000;
+    opacity: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;  
+}
 
+@keyframes slideUp {
+    from{
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.images-overlay h3{
+    font-size: 18px;
+    font-family: 'Varela Round',sans-serif;
+    font-weight: 600;
+    color: #fff;
+    z-index: 3;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 20px;
+}
+
+.images:hover .images-overlay{
+    visibility: visible;
+    animation: slideUp 1s ease-in-out;
+}
+
+.images:hover img{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
 
 @media(max-width: 1023px){
     .web-projects-container{
@@ -1001,12 +1048,15 @@ footer {
     }
 }
 
-@media(max-width: 400px){
+@media(max-width: 500px){
     .inside-image-container{
         flex-direction: column;
         height: auto;
     }
     .image-cont{
         width: 100%;
+    }
+    .images-overlay{
+        top: 82%;
     }
 }
