@@ -301,11 +301,11 @@ header {
     justify-content: space-between;
     box-sizing: border-box;
     gap: 20px;
-    overflow: hidden;
+
 }
 
 .outside-images {
-    min-height: 250px;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     display: block;
@@ -814,7 +814,7 @@ footer {
     }
 
     .overlay-div {
-        min-height: 82vh;
+        min-height: 100vh;
         width: 100%;
     }
 
@@ -1060,3 +1060,124 @@ footer {
         top: 82%;
     }
 }
+
+/* Design Container */
+
+.design-section{
+    min-height: 1050px;
+    width: 100%;
+}
+.top-design-section svg{
+    height: 104px;
+    width: 100%;
+    display: block;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+}
+
+.top-design-section .elementor-shape-fill{
+    fill: #c0d6f9;
+    transform-origin: center;
+}
+
+.design-container{
+    max-width: 79%;
+    height: auto;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+.design-container h2{
+    text-align: center;
+    font-size: 1.9em;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.design-container p{
+    font-size: 15px;
+    font-family: 'Varela Round',sans-serif;
+    font-family: 600;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.grid-divs{
+    min-height: 500px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.inside-grid-divs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inside-grid-divs h3{
+    color: #333;
+    font-size: 21px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 600;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.inside-grid-divs i{
+    color: #fff;
+    font-size: 40px;
+}
+
+.div1{
+    background-color: #e55525;
+    
+}
+
+.div2{
+    background-color: #cfab55;
+}
+
+.div3{
+    background-color: #5cb85c; 
+}
+
+.div4{
+    background-color: #fa4a7e;
+}
+
+.div5{
+    background-color: #1ec4ec;
+}
+
+.div6{
+    background-color: #52a7fe;
+}
+
+.images-cont{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.inside-img{
+    height: 100%;
+    width: 100%;
+}
+
+.images-cont img{
+    width: 100%;
+}
+/* 
+@media screen and (max-width: 1023px) {
+    
+} */
