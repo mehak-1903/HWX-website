@@ -1187,7 +1187,9 @@ footer {
         width: 100%;
     }
     .design-container{
-        width: 100%;
+        max-width: 100%;
+        margin: 0px;
+        padding: 0px;
     }
     .grid-divs{
         height: 100%;
