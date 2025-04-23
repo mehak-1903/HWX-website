@@ -16,7 +16,7 @@ header {
 
 /* Navbar */
 
-nav {
+.nav {
     height: auto;
     max-width: 75.8%;
     margin: auto;
@@ -126,13 +126,14 @@ nav {
     overflow: hidden;
     box-sizing: border-box;
     cursor: grab;
+    padding-top: 40px;
 }
 
 .sub-nav-images img {
     object-fit: cover;
     background-size: contain;
     height: auto;
-    width: 200px;
+    width: 195px;
 }
 
 /* Main */
