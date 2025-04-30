@@ -20,7 +20,8 @@ header {
     min-height: 780px;
     width: 100%;
     background-color: rgba(64, 84, 178, 0.8);
-    filter: brightness(100%) contrast(150%) saturate(151%) blur(0px) hue-rotate(0deg);
+    filter: brightness(80%) contrast(171%) saturate(151%) blur(0px) hue-rotate(0deg);
+    /* filter: brightness(146%) contrast(171%) saturate(151%) blur(0px) hue-rotate(0deg); */
     z-index: 2;
     position: absolute;
     inset: 0;
@@ -30,7 +31,7 @@ header {
 
 .nav {
     height: auto;
-    max-width: 75.8%;
+    max-width: 79%;
     margin: auto;
     box-sizing: border-box;
     display: flex;
@@ -125,9 +126,9 @@ header {
 
 .inside-header-container {
     height: auto;
-    max-width: 75.8%;
+    max-width: 75%;
     margin: auto;
-    margin-top: 13.5%;
+    margin-top: 12%;
     text-align: center;
 }
 
@@ -172,7 +173,7 @@ header {
 .design-container{
     max-width: 79%;
     height: auto;
-    margin: 30px auto;
+    margin: 3px auto;
     padding: 10px;
 }
 
@@ -195,7 +196,7 @@ header {
 }
 
 .grid-divs{
-    min-height: 500px;
+    min-height: 580px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -440,6 +441,7 @@ header {
     border-style: solid;
     border-width: 0px 0px 4px 0px;
     border-color: #464646;
+    margin-top: 40px;
     /* transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;    */
 }
 
@@ -517,7 +519,7 @@ header {
 
 .sub-footer {
     width: 100%;
-    min-height: 348px;
+    min-height: 346px;
     background-color: #292929;
     padding: 70px 20px;
 }
@@ -592,6 +594,14 @@ header {
 
 .footer-content ul li a:hover i {
     color: #fff !important;
+}
+
+.footer-content:nth-child(2) {
+    margin-bottom: 60px;
+}
+
+.footer-content:nth-child(3) {
+    margin-bottom: 40px;
 }
 
 /* Footer */
@@ -746,6 +756,15 @@ footer {
         text-align: center;
     }
 
+    
+    .footer-content:nth-child(2) {
+        margin-bottom: 0px;
+    }
+
+    .footer-content:nth-child(3) {
+        margin-bottom: 0px;
+    }
+
     .inside-header-container {
         height: auto;
         width: 100%;
@@ -824,6 +843,14 @@ footer {
     }
     .about-website h2{
         font-size: 22px;
+    }
+    
+    .footer-content:nth-child(2) {
+        margin-bottom: 0px;
+    }
+
+    .footer-content:nth-child(3) {
+        margin-bottom: 0px;
     }
 }
 
@@ -1025,6 +1052,8 @@ footer {
 .svg-bottom{
     height: auto;
     width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 .svg-bottom svg{
