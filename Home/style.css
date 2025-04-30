@@ -488,13 +488,6 @@ main {
     font-family: 'Varela Round', sans-serif;
 }
 
-/* @media(max-width: 768px){
-.subcontainer{
-  flex-direction: column;
-}
-} */
-
-
 /* Recent Work */
 .work {
     width: 100%;
@@ -531,7 +524,7 @@ main {
 }
 
 .grid-images {
-    width: auto;
+    width: 100%;
     min-height: 350px;
     background-size: cover;
     backface-visibility: hidden;
@@ -542,10 +535,12 @@ main {
 
 .image1 {
     background-image: url('./work-image1.png');
+    width: 99.5%;
 }
 
 .image2 {
     background-image: url('./work-image2.png');
+    width: 99.5%;
 }
 
 .image3 {
@@ -556,14 +551,17 @@ main {
 .image4 {
     background-image: url('./work-image4.png');
     background-position: center;
+    width: 99.5%;
 }
 
 .image5 {
     background-image: url('./work-image5.png');
+    width: 99.5%;
 }
 
 .image6 {
     background-image: url('./work-image6.png');
+    width: 99.5%;
 }
 
 .image7 {
@@ -831,6 +829,14 @@ main {
     padding: 10px;
 }
 
+.footer-content:nth-child(2) {
+    margin-bottom: 60px;
+}
+
+.footer-content:nth-child(3) {
+    margin-bottom: 30px;
+}
+
 .footer-content h2 {
     font-size: 18px;
     font-weight: 600;
@@ -982,8 +988,8 @@ footer {
         margin: 0px;
     }
 
-    nav{
-        background: #333;   
+    nav {
+        background: #333;
     }
 
     .footer-container {
@@ -996,6 +1002,15 @@ footer {
 
     .footer-container h4 {
         text-align: center;
+    }
+
+
+    .footer-content:nth-child(2) {
+        margin-bottom: 0px;
+    }
+
+    .footer-content:nth-child(3) {
+        margin-bottom: 0px;
     }
 }
 
@@ -1047,8 +1062,8 @@ footer {
         padding-left: 20px;
     }
 
-    nav{
-        background: #333;   
+    nav {
+        background: #333;
     }
 
     .footer-container {
@@ -1057,6 +1072,15 @@ footer {
 
     .footer-container ul {
         justify-content: center;
+    }
+
+
+    .footer-content:nth-child(2) {
+        margin-bottom: 0px;
+    }
+
+    .footer-content:nth-child(3) {
+        margin-bottom: 0px;
     }
 }
 
@@ -1081,13 +1105,13 @@ footer {
 /* For Tablet */
 
 @media screen and (max-width: 1023px) {
-    header{
+    header {
         min-height: 81vh;
         width: 100%;
         background-size: contain;
     }
 
-    .nav{
+    .nav {
         max-width: 100%;
         height: 120px;
         display: flex;
@@ -1147,22 +1171,22 @@ footer {
         min-height: 100px;
     }
 
-    .sub-nav-images{
+    .sub-nav-images {
         height: 100%;
         /* width: 100%; */
     }
 
-    .sub-nav-images img:first-child{
+    .sub-nav-images img:first-child {
         text-align: center;
         display: block;
     }
 
-    .sub-nav-images img:nth-child(2){
+    .sub-nav-images img:nth-child(2) {
         text-align: center;
         display: block;
     }
 
-    .sub-nav-images img{
+    .sub-nav-images img {
         display: none;
     }
 }
@@ -1170,13 +1194,13 @@ footer {
 /* For mobile */
 
 @media screen and (max-width: 600px) {
-    header{
+    header {
         min-height: 81vh;
         width: 100%;
         background-size: contain;
     }
 
-    .nav{
+    .nav {
         max-width: 100%;
         height: 120px;
         display: flex;
@@ -1185,7 +1209,7 @@ footer {
         padding: 0px 30px;
         background-color: #333;
     }
-    
+
     .navbar ul {
         position: fixed;
         top: -200px;
@@ -1198,7 +1222,7 @@ footer {
         transition: top 0.3s ease;
     }
 
-    #click:checked ~ .menu-btn i:before {
+    #click:checked~.menu-btn i:before {
         content: "\f00d";
     }
 
@@ -1226,7 +1250,7 @@ footer {
         text-align: right;
     }
 
-    #click:checked ~ .navbar ul {
+    #click:checked~.navbar ul {
         top: 80px;
     }
 
@@ -1236,22 +1260,22 @@ footer {
         min-height: 100px;
     }
 
-    .sub-nav-images{
+    .sub-nav-images {
         height: 100%;
         /* width: 100%; */
     }
 
-    .sub-nav-images img:first-child{
+    .sub-nav-images img:first-child {
         text-align: center;
         display: block;
     }
 
-    
-    .sub-nav-images img:nth-child(2){
+
+    .sub-nav-images img:nth-child(2) {
         display: none;
     }
 
-    .sub-nav-images img{
+    .sub-nav-images img {
         display: none;
     }
 }
